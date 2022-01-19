@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url(./img/fondo.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a {
+            background-color: rgb(5, 78, 175);
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 200%;
+            color: beige;
+        }
+
+        a:hover {
+            background-color: rgba(19, 159, 251, 0.788);
+            color: black;
+        }
+
+        h1 {
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <h1>¿Te vas a inscribir a AP?</h1>
+        <!-- Se puede usar la etiqueta a o la etiqueta button -->
+        <a type="button" id="si" onclick="acepta()">SI</a>
+        <a type="button" id="no" onmouseover="mover()">NO</a>
+
+
+    <script>
+        function acepta() {
+            alert("GENIAL!!! \nNos vemos en la cursada de Aprendé Programando 2022")
+        }
+
+        function mover() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('no').style.position = "absolute";
+            document.getElementById('no').style.left = newWidth + "px";
+            document.getElementById('no').style.top = newHeight + "px";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linterna</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        text-align: center;
+        /* background-image: url(./img/fondo.png); */
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      a {
+        background-color: rgb(5, 78, 175);
+        border-radius: 10px;
+        padding: 10px;
+        color: beige;
+      }
+    </style>
+  </head>
+
+  <body id="app">
+    <h1 id="titulo">Hola</h1>
+    <a type="button" onclick="apagado();">Apagado</a>
+    <a type="button" onclick="encendido();">Encendido</a>
+    <!-- <div id="app"></div> -->
+
+    <script>
+      function apagado() {
+        document.getElementById("app").style.backgroundColor="black";
+        document.getElementById("titulo").style.color="white";
+      }
+
+      function encendido() {
+        document.getElementById("app").style.backgroundColor="white";
+        document.getElementById("titulo").style.color="black";
+      }
+    </script>
+  </body>
+</html>

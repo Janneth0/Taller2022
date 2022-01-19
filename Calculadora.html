@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        text-align: center;
+        background-image: url(./img/fondo.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      a {
+        background-color: rgb(5, 78, 175);
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 200%;
+        color: beige;
+      }
+      a:hover{
+        background-color: rgba(19, 159, 251, 0.788); 
+        color: black;
+      }
+      input{
+          margin-bottom: 30px;
+          padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Calculadora</h1>
+    <input type="number" id="nro1" name="nro1">
+    <input type="number" id="nro2" name="nro2">
+    
+    <br>
+
+    <a type="button" onclick="sumar();">+</a>
+    <a type="button" onclick="restar();">-</a>
+    <a type="button" onclick="dividir();">/</a>
+    <a type="button" onclick="multiplicar();">*</a>
+    <h2 id="elResultado">Resultado</h2>
+
+    <script>
+        let x,y,resultado;
+
+        function sumar(){
+            x=parseInt(document.getElementById("nro1").value);
+            y=parseInt(document.getElementById("nro2").value);
+            resultado=x+y;
+            document.getElementById("elResultado").innerHTML = resultado;
+        }
+
+        function restar(){
+            x=parseInt(document.getElementById("nro1").value);
+            y=parseInt(document.getElementById("nro2").value);
+            resultado=x-y;
+            document.getElementById("elResultado").innerHTML = resultado;
+
+        }
+
+        function multiplicar(){
+            x=parseInt(document.getElementById("nro1").value);
+            y=parseInt(document.getElementById("nro2").value);
+            resultado=x*y;
+            document.getElementById("elResultado").innerHTML = resultado;
+        }
+
+        function dividir(){
+            x=parseInt(document.getElementById("nro1").value);
+            y=parseInt(document.getElementById("nro2").value);
+            resultado=x/y;
+            document.getElementById("elResultado").innerHTML = resultado;
+        }
+      
+
+    
+    </script>
+  </body>
+</html>

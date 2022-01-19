@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          text-align: center;
+          /* background-image: url(./img/fondo.png); */
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+        a {
+          background-color: rgb(5, 78, 175);
+          border-radius: 10px;
+          padding: 10px;
+          color: beige;
+        }
+        #image {
+          /* background-color: blue; */
+          margin: 20% 15%;
+          width: 70%;
+          height: 80%;
+          overflow: hidden;
+        }
+        img {
+          width: 190%;
+          margin-left: -200px;
+        }
+      </style>
+    </head>
+  
+    <body>
+      <h1 id="titulo">Hola</h1>
+      <a type="button" onclick="apagado();">Apagado</a>
+      <a type="button" onclick="encendido();">Encendido</a>
+  
+      <div id="image">
+        <img id="lampara"        src="https://media.istockphoto.com/vectors/light-bulbs-switched-on-and-off-vector-id531675633?k=20&m=531675633&s=170667a&w=0&h=FCkysCHp1g5kHgm1qFKawA8IbDokU10s4bhHfG3cFf0="
+        alt="lamparita" />';
+      </div>
+  
+      <script>
+        function apagado() {
+          // document.getElementById("app").style.backgroundColor = "black";
+          // alert("apagado");
+          document.getElementById("titulo").style.color = "white";
+          document.getElementsById("lampara").style.margin = "0px ";
+  
+          // margin-left: -150px;
+  
+          // document.getElementById("titulo").innerHTML =
+          //   ' <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Gluehlampe_01_KMJ.jpg" alt="lamparita">';
+        }
+  
+        function encendido() {
+          // document.getElementById("app").style.backgroundColor = "white";
+          document.getElementById("titulo").style.color = "black";
+          document.getElementsById("lampara").style.margin =
+            "0px 0px 0px -150px ";
+          alert("encendido");
+          // document.getElementById("titulo").innerHTML =
+          // ' <img src="https://st2.depositphotos.com/2731675/6319/i/950/depositphotos_63199939-stock-photo-incandescent-lamp.jpg" alt="lamparita">';
+        }
+      </script>
+    </body>
