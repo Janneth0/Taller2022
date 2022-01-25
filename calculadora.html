@@ -11,7 +11,7 @@
         background-color: #428ae7;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
-      a {
+      button {
         background-color: rgb(7, 50, 105);
         border-radius: 10px;
         padding: 10px 20px;
@@ -19,13 +19,16 @@
         font-size: 200%;
         color: beige;
       }
-      a:hover{
+      button:hover{
         background-color: rgba(19, 159, 251, 0.788); 
         color: black;
       }
       input{
           margin-bottom: 30px;
           padding: 10px;
+      }
+      p {
+        font-size: 50px;
       }
     </style>
   </head>
@@ -37,11 +40,12 @@
     
     <br>
 
-    <a type="button" onclick="sumar();">+</a>
-    <a type="button" onclick="restar();">-</a>
-    <a type="button" onclick="dividir();">/</a>
-    <a type="button" onclick="multiplicar();">*</a>
-    <h2 id="elResultado">Resultado</h2>
+    <button type="button" onclick="sumar();">+</button>
+    <button type="button" onclick="restar();">-</button>
+    <button type="button" onclick="dividir();">/</button>
+    <button type="button" onclick="multiplicar();">*</button>
+    <h2>Resultado</h2>
+    <p id="elResultado"></p>
 
     <script>
         let x,y,resultado;
