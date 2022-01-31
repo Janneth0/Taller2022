@@ -49,12 +49,17 @@
 
     <script>
         let x,y,resultado;
+      //Podria utilizarse prompt y alert
+      // x = parseInt(prompt("ingrese primer número"));
+      // y = parseInt(prompt("ingrese segundo número"));
 
         function sumar(){
             x=parseInt(document.getElementById("nro1").value);
             y=parseInt(document.getElementById("nro2").value);
             resultado=x+y;
             document.getElementById("elResultado").innerHTML = resultado;
+            //Podria utilizarse prompt y alert
+            // alert("La Suma es: " + resultado);
         }
 
         function restar(){
@@ -62,6 +67,8 @@
             y=parseInt(document.getElementById("nro2").value);
             resultado=x-y;
             document.getElementById("elResultado").innerHTML = resultado;
+            //Podria utilizarse prompt y alert
+            // alert("La Resta es: " + resultado);
 
         }
 
@@ -70,6 +77,8 @@
             y=parseInt(document.getElementById("nro2").value);
             resultado=x*y;
             document.getElementById("elResultado").innerHTML = resultado;
+            //Podria utilizarse prompt y alert
+            // alert("La Multiplicación es: " + resultado);
         }
 
         function dividir(){
@@ -77,6 +86,8 @@
             y=parseInt(document.getElementById("nro2").value);
             resultado=x/y;
             document.getElementById("elResultado").innerHTML = resultado;
+            //Podria utilizarse prompt y alert
+            // alert("La División es: " + resultado);
         }
     </script>
   </body>
